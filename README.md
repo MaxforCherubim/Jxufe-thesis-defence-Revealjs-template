@@ -7,7 +7,7 @@
 ## 项目概述​
 
 - 本项目为[江西财经大学硕士毕业论文全流程](https://github.com/MaxforCherubim/Jxufe-master-thesis-process)的子项目
-- 项目起初源于预答辩，使用的是Revealjs形式的幻灯片进行开题答辩
+- 项目起初源于预答辩，使用的是Revealjs形式的幻灯片进行预答辩
 - 本项目在[Github](https://github.com/MaxforCherubim/Jxufe-thesis-defence-Revealjs-template)和[Gitee](https://gitee.com/maxforcherubim/Jxufe-thesis-defence-Revealjs-template)上同步更新，欢迎各位学弟学妹提交反馈，共同完善此模板
 
 > <a href="https://revealjs.com/"><img src="imgs/logos/reveal_logo.svg" style="vertical-align: middle; margin-top: -2px" width="80"></a>是一款基于JavaScript构建的幻灯片制作工具
