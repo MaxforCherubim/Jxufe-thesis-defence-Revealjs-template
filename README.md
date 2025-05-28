@@ -1,4 +1,4 @@
-![jxufe](imgs/logos/江西财经大学-logo.svg)
+[![jxufe](imgs/logos/江西财经大学-logo.svg)](https://www.jxufe.edu.cn/)
 
 # 江西财经大学答辩Revealjs模板
 
