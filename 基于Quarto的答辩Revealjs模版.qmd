@@ -1,0 +1,293 @@
+---
+title: 你的论文标题
+subtitle: 副标题
+date: last-modified
+date-format: iso
+author:
+  - name: 你的名字
+    email: 你的邮箱
+    affiliations: 你的学院
+
+format:
+  clean-revealjs:
+    title-slide-attributes: 
+      data-background-image: imgs/background/background.jpg
+      data-background-size: cover
+      data-background-opacity: '0.5'
+    header: 你的学院
+    header-logo: imgs/logos/江西财经大学-logo.svg
+    header-logo-link: https://www.jxufe.edu.cn/
+    logo: imgs/logos/江西财经大学-校徽.svg
+    footer-logo-link: https://www.jxufe.edu.cn/
+    sc-sb-title: true
+    css: assets/logo.css
+    slide-number: true
+    menu: false
+    # chalkboard: true
+    # multiplex: 
+      # url: 'https://reveal-multiplex.glitch.me/'
+    toc: false
+    toc-title: 目录
+    toc-depth: 3
+    # fig-format: svg
+    # fig-width: 5
+    # fig-height: 5
+    transition: fade
+    background-transition: fade
+    code-block-height: 600px
+    preview-links: true
+    embed-resources: true
+    self-contained-math: true
+    html-math-method: mathjax
+    auto-animate-easing: ease-in-out
+    auto-animate-unmatched: true
+    auto-animate-duration: 1.0
+    number-sections: false
+    incremental: false
+
+execute: 
+  eval: true
+  echo: false
+
+footnotes-hover: true
+reference-location: margin
+citations-hover: true
+
+lang: zh
+mainfont: STKaiti
+sansfont: Times New Roman
+
+revealjs-plugins:
+  - pointer
+filters: 
+  - reveal-header
+---
+
+## 目录
+
+<!-- 由于模版使用的是别人开发的Revealjs模版`clean-revealjs`，其自动目录是不符合我的需求，所以我自己排版了一个-->
+:::::: columns
+::: {.column width="33%"}
+1. 前言
+- 自我介绍
+- 论文评阅成绩
+
+2. 绪论
+- 研究背景和意义
+- 研究内容
+- 研究难点与创新点
+:::
+
+::: {.column width="33%"}
+3. 模型与数据集
+- 模型构建
+- 数据集构建
+
+4. 实证分析
+- 评估指标
+:::
+
+::: {.column width="20%"}
+4. 结论与展望
+- 结论
+- 展望
+:::
+::::::
+
+# 前言 {.center style="text-align: center;"}
+
+##
+
+### 自我介绍 {.center}
+
+- 应统2班章迎潭
+- 导师：马海强
+- 研究方向：数据可视化、数据分析、机器学习
+- 项目仓库：{{< fa brands github >}} <https://github.com/MaxforCherubim>
+
+### 评阅成绩
+- 评阅人1：85分
+- 评阅人2：81分
+
+::: footer
+由
+<a href="https://quarto.org/">
+    <img src="imgs/logos/quarto.png" style="vertical-align: middle; margin-top: 10px" width="100">
+</a>
+排版的
+<a href="https://revealjs.com/">
+    <img src="imgs/logos/reveal_logo.svg" style="vertical-align: middle; margin-top: 10px" width="100">
+</a>
+幻灯片
+:::
+
+# 绪论 {.center style="text-align: center;"}
+
+## 研究背景和意义
+
+### 研究背景
+
+- 无序列表1
+- 无序列表2
+
+- 一级无序列表
+  - 二级无序列表
+    - 三级无序列表
+
+### 研究意义
+
+1. 有序列表1
+2. 有序列表2
+
+##
+
+3. 一级有序列表
+
+  3.1 二级有序列表
+
+    3.1.1 三级有序列表
+
+很明显，字体和大小会改变，但不适配模版
+
+## 研究内容
+
+<!-- &emsp;是空白字符占位符，这里使用两个是用来控制缩进 -->
+&emsp;&emsp;本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文本文
+
+> 引用内容
+
+##
+
+### 论文流程图
+
+<center><img src="imgs/论文流程图.png" width="60%"></center>
+
+## 研究难点与创新点
+
+### 难点
+
+
+
+### 创新点
+
+
+
+# 模型与数据集 {.center style="text-align: center;"}
+
+## 模型构建
+
+###
+
+
+
+## 数据集构建
+
+### 1. 数据来源
+
+- 财务指标数据
+  - 中国证监会官网
+  - 国泰安 （CSMAR）数据库
+  - EPS 数据平台数据库
+  - [巨潮咨询网](http://www.cninfo.com.cn/new/index)
+
+- 财报文本数据
+  - 巨潮资讯网、上海证券交易所和深圳证券交易所等官方网站披露的定期报告（主要是年度报告）中获取
+
+## 
+
+### 2. 数据说明
+
+- 本文对上述来源的财务指标数据进行汇总，并对部分指标进行衍生计算得出一系列新的指标，共有88个特征和1个标签（财务舞弊：1，非财务舞弊：0），10年总计样本量33574
+
+- 如下表所示，原始财务指标分为五大类，一共88个特征
+
+##
+
+```{python}
+import plotly.graph_objects as go
+import pandas as pd
+
+df = pd.read_excel('data/原始数据特征变量信息表.xlsx', header=None)
+df.fillna(method='ffill', inplace=True)
+fig = go.Figure(data=[
+    go.Table(
+      cells=dict(
+          values=[df[col] for col in df.columns],
+              # fill_color='lavender',
+              align='left'
+      ),
+      columnwidth=[1.5, 3, 12]
+  )
+])
+fig.update_layout(width=1200, height=600)
+fig
+```
+
+##
+
+### 3. 数据清洗
+
+::: panel-tabset
+#### 数据清洗流程图
+<center><img src="imgs/数据清洗流程图.png" width="100%"></center>
+
+#### 数据集划分
+| 年份 | 分布 | 比例 |
+|:---:|:---:|:---:|
+| 2012 | 2199:239 | 9.20 |
+| 2013 | 2253:231 | 9.75 |
+| 2014 | 2365:239 | 9.90 |
+| 2015 | 2461:334 | 7.37 |
+| 2016 | 2665:409 | 6.52 |
+| 2017 | 2971:451 | 6.59 |
+| 2018 | 3006:522 | 5.76 |
+| 2019 | 3363:495 | 6.79 |
+| 2020 | 3850:461 | 8.35 |
+| 2021 | 4425:415 | 10.66 |
+
+#### 处理后数据
+- 2021年全年数据共4840个样本作为测试集，2012-2020年共28514个样本作为训练集；训练集正负类样本数之比为25133:3381，比例为7.43，测试集则为4425:415，比例为10.66
+可见存在严重类别不平衡问题
+
+- 处理后的数据集剩下86个特征变量，样本量33354
+:::
+
+##
+
+### 4. 特征构造
+
+- 提取中文文本并分词
+- 计算TF-IDF矩阵[^1]和文本相似矩阵
+- 根据文本相似矩阵构建社群网络（聚类）
+<center><img src="imgs/社群网络图.png" width="80%"></center>
+
+[^1]: $tfidf\left( w,d \right) =\frac{n_w}{n_d} \log \frac{N}{N_w+1}$
+
+# 实证分析 {.center style="text-align: center;"}
+
+## 评估指标
+
+- 准确率（Accuracy）
+- 精确率（Precision）
+- 召回率（Recall）
+- F1-score
+- AUC
+- MCC
+
+# 结论与展望 {.center style="text-align: center;"}
+
+## 结论 {.center}
+
+1. 企业内部构建智能预警体系
+2. 开发统一审计分析平台
+3. 优化内部审计流程
+4. 政府完善监管数据共享机制
+
+## 展望 {.center}
+
+1. 聚焦特定行业研究
+2. 模型调参优化
+3. 深化模型可解释性研究
+4. 探索创新模型与跨学科融合
+
+# 感谢各位老师聆听 {.center style="text-align: center;"}
