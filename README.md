@@ -15,7 +15,7 @@
     1. Revealjs优势是输出格式为HTML，即网页；Revealjs本质上是一个网页形式的幻灯片
     2. 因此可以展示包括但不限于文本、图片、视频、音频、图表、代码等多种媒体内容
     3. Revealjs能实现的展示能力绝对远超你的想象，包括但不限于多设备同步展示（老师与学生福音）；3D图形展示等
-    3. 但也正因为其网页特性，很多功能默认需要联网（其实直接把所以资源都保存在本地也可以，但这样对使用者要求较高），在遇到没有网络的展示环境时，弊端很大
+    4. 但也正因为其网页特性，很多功能默认需要联网（其实直接把所以资源都保存在本地也可以，但这样对使用者要求较高），在遇到没有网络的展示环境时，弊端很大
 
 - 本项目特别之处在于使用[Quarto](https://quarto.org/)来输出[Revealjs](https://revealjs.com/)幻灯片
     1. 这样无需学习语法或者少量学习，甚至AI输出部分，就可以轻松得到所需的Revealjs幻灯片
@@ -44,7 +44,7 @@
 4. 由于Quarto的不断更新，可能会导致本项目产生Bug，除此之外还可能会有其他Bug，请在Github上提交[issue](https://github.com/MaxforCherubim/Jxufe-thesis-defence-Revealjs-template/issues)，我会及时修复
 5. 本项目模版使用的字体是楷体，由于对前端的不了解，无法做到在HTML中嵌入自己喜欢的[霞鹜文楷](https://github.com/lxgw/LxgwWenKai)字体，非常欢迎使用者能够解决这个问题并分享给我
 6. 本项目充分利用了Revealjs的特性，加入了根据Plotly制作的可交互式表格，可以展示超长表格
-7. 本项目还充分利用了开源开发者开发的关于Revealjs的[Quarto拓展](https://quarto.org/docs/extensions/listing-revealjs.html)，实现了一些高级功能，比如按下[Q可以更改鼠标指针](https://github.com/quarto-ext/pointer)；[多Logo设置](https://github.com/shafayetShafee/reveal-header)；[插入特殊图标](https://github.com/quarto-ext/fontawesome)等，如果还有其他高级功能需要，可以先浏览一下Quarto的拓展列表，或者在讨论区创建讨论
+7. 本项目还充分利用了开源开发者开发的关于Revealjs的[Quarto拓展](https://quarto.org/docs/extensions/listing-revealjs.html)，实现了一些高级功能，比如[按下Q可以更改鼠标指针](https://github.com/quarto-ext/pointer)；[多Logo设置](https://github.com/shafayetShafee/reveal-header)；[插入特殊图标](https://github.com/quarto-ext/fontawesome)等，如果还有其他高级功能需要，可以先浏览一下Quarto的拓展列表，或者在讨论区创建讨论
 
 ## 贡献指南​
 
