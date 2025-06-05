@@ -2,7 +2,7 @@
 
 # 江西财经大学答辩Revealjs模板
 
-![License](https://img.shields.io/github/license/MaxforCherubim/Jxufe-thesis-defence-Revealjs-template) [![Revealjs](https://img.shields.io/badge/Revealjs?logo=revealdotjs&logoColor=%23008080)](https://www.latex-project.org/) [![Quarto](https://img.shields.io/badge/Quarto-Revealjs?logo=quarto&logoColor=%2339729E)](https://quarto.org/)
+![License](https://img.shields.io/github/license/MaxforCherubim/Jxufe-thesis-defence-Revealjs-template) [![Revealjs](https://img.shields.io/badge/Revealjs-html?logo=revealdotjs&logoColor=%23F2E142)](https://revealjs.com/) [![Quarto](https://img.shields.io/badge/Quarto-Revealjs?logo=quarto&logoColor=%2339729E)](https://quarto.org/)
 
 为酱菜学子提供方便好用的答辩Revealjs形式Quarto模板
 
