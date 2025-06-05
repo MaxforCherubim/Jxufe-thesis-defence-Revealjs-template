@@ -19,7 +19,7 @@
 
 - 本项目为[江西财经大学硕士毕业论文全流程]的子项目
 - 项目起初源于预答辩，使用的是Revealjs形式的幻灯片进行预答辩
-- 本项目在[Github](https://github.com/MaxforCherubim/Jxufe-thesis-defence-Revealjs-template)和[Gitee](https://gitee.com/maxforcherubim/Jxufe-thesis-defence-Revealjs-template)上同步更新，欢迎各位学弟学妹提交反馈，共同完善此模板
+- 本项目在[Github]和[Gitee]上同步更新，欢迎各位学弟学妹提交反馈，共同完善此模板
 
 > [!TIP]
 > <a href="https://revealjs.com/"><img src="imgs/logos/reveal_logo.svg" style="vertical-align: middle; margin-top: -2px" width="80"></a>是一款基于JavaScript构建的幻灯片制作工具
@@ -39,7 +39,7 @@
 
 ## 使用方法​
 
-1. 下载并安装Quarto，具体教程请参考[Get Started](https://quarto.org/docs/get-started/)
+1. 下载并安装Quarto，具体教程请参考[Get Started]
 
 > [!TIP]
 > MacOS的可以使用brew安装
@@ -50,7 +50,7 @@
 
 ## 注意事项​
 
-1. 强烈建议先仔细学习一下Quarto的[Get Started](https://quarto.org/docs/get-started/)章节，熟悉Quarto的基本用法
+1. 强烈建议先仔细学习一下Quarto的Get Started章节，熟悉Quarto的基本用法
 2. 再强烈建议先学习一下Quarto[有关Revealjs的介绍](https://quarto.org/docs/presentations/revealjs/presenting.html)，了解Revealjs的基本用法，包括但不限于**画板**、**演讲者视图**等
 3. 本项目较为傻瓜，安装好Quarto和Vscode对应的Quarto插件后，就可以运行本项目了，排版自己的Revealjs幻灯片了。如果在使用过程中产生了多种问题，请在[讨论区]创建相关讨论，我都会尽力解答的
 4. 由于Quarto的不断更新，可能会导致本项目产生Bug，除此之外还可能会有其他Bug，请在Github上提交[issues]，我会及时修复
@@ -65,13 +65,13 @@
 
 ## 联系方式​
 
-- 本项目作者是章迎潭，本科17级经济统计1班，硕士23级应用统计2班
-- 导师为数理统计系马海强教授
-- 邮件：<EMAIL><bay237580157@outlook.com>
+- 作者：[章迎潭]
+- 导师：[马海强教授]
+- 邮件：<EMAIL>bay237580157@outlook.com</EMAIL>
 
 ## 许可证信息​
 
-本项目开源许可证为[MIT license](https://opensource.org/license/mit/)
+本项目开源许可证为[MIT license]
 
 [回到顶部](#目录)
 
