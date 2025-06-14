@@ -8,12 +8,14 @@
 
 ## 目录
 
-- [项目概述​](#项目概述)
-- [使用方法​](#使用方法)
-- [注意事项​](#注意事项)
-- [贡献指南​](#贡献指南)
-- [联系方式​](#联系方式)
-- [许可证信息​](#许可证信息)
+- [江西财经大学答辩Revealjs模板](#江西财经大学答辩revealjs模板)
+  - [目录](#目录)
+  - [项目概述​](#项目概述)
+  - [使用方法​](#使用方法)
+  - [注意事项​](#注意事项)
+  - [贡献指南​](#贡献指南)
+  - [联系方式​](#联系方式)
+  - [许可证信息​](#许可证信息)
 
 ## 项目概述​
 
@@ -44,18 +46,18 @@
 > [!TIP]
 > MacOS的可以使用brew安装
 
-2. 在Vscode（建议）中安装Quarto插件
+2. 在VS Code（建议）中安装Quarto插件
 3. Git clone本项目到本地
-4. 在Vscode中打开本项目，修改Quarto模版文件内容为你自己的内容，运行后即可输出你的Revealjs幻灯片
+4. 在VS Code中打开本项目，修改Quarto模版文件内容为你自己的内容，运行后即可输出你的Revealjs幻灯片
 
 ## 注意事项​
 
 1. 强烈建议先仔细学习一下Quarto的Get Started章节，熟悉Quarto的基本用法
 2. 再强烈建议先学习一下Quarto[有关Revealjs的介绍](https://quarto.org/docs/presentations/revealjs/presenting.html)，了解Revealjs的基本用法，包括但不限于**画板**、**演讲者视图**等
-3. 本项目较为傻瓜，安装好Quarto和Vscode对应的Quarto插件后，就可以运行本项目了，排版自己的Revealjs幻灯片了。如果在使用过程中产生了多种问题，请在[讨论区]创建相关讨论，我都会尽力解答的
+3. 本项目较为傻瓜，安装好Quarto和VS Code对应的Quarto插件后，就可以运行本项目，排版自己的Revealjs幻灯片了。如果在使用过程中产生了多种问题，请在[讨论区]创建相关讨论，我都会尽力解答的
 4. 由于Quarto的不断更新，可能会导致本项目产生Bug，除此之外还可能会有其他Bug，请在Github上提交[issues]，我会及时修复
 5. 本项目模版使用的字体是楷体，由于对前端的不了解，无法做到在HTML中嵌入自己喜欢的[霞鹜文楷]字体，非常欢迎使用者能够解决这个问题并分享给我
-6. 本项目充分利用了Revealjs的特性，加入了根据[Plotly](https://plotly.com/)制作的可交互式表格，可以展示超长表格
+6. 本项目充分利用了Revealjs的特性，加入了根据Python库[Plotly](https://plotly.com/)制作的可交互式表格，可以展示超长表格
 7. 本项目还充分利用了开源开发者开发的关于Revealjs的[Quarto拓展](https://quarto.org/docs/extensions/listing-revealjs.html)，实现了一些高级功能，比如[按下Q可以更改鼠标指针](https://github.com/quarto-ext/pointer)；[多Logo设置](https://github.com/shafayetShafee/reveal-header)；[插入特殊图标](https://github.com/quarto-ext/fontawesome)等，如果还有其他高级功能需要，可以先浏览一下Quarto的拓展列表，或者在讨论区创建讨论
 
 ## 贡献指南​
